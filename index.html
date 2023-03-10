@@ -53,7 +53,7 @@
 				streamingAssetsUrl: "StreamingAssets",
 				companyName: "DefaultCompany",
 				productName: "My Happy Dino",
-				productVersion: "0.0.11",
+				productVersion: "0.0.12",
 			};
 			var scaleToFit;
 			try {
@@ -75,15 +75,15 @@
 					w = window.innerWidth;
 					h = window.innerHeight;
 
-					var r = 1080 / 1920;
+					var r = 600 / 800;
 
 					if (w * r > window.innerHeight) {
 						w = Math.min(w, Math.ceil(h / r));
 					}
 					h = Math.floor(w * r);
 				} else {
-					w = 1920;
-					h = 1080;
+					w = 800;
+					h = 600;
 				}
 
 				container.style.width = canvas.style.width = w + "px";
